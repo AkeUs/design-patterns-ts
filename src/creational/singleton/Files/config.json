@@ -1,0 +1,4 @@
+{
+  "environment": "develop",
+  "connectionString": "Server=ServerName;Database=DBName;UserId=Username;Password=******;"
+}

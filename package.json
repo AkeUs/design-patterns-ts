@@ -1,0 +1,51 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "Design Patterns With TypeScript",
+  "author": "Miguel Angel Ake Us",
+  "license": "MIT",
+  "main": "dist/app.js",
+  "scripts": {
+    "abstract-factory": "ts-node src/creational/abstract-factory/Client.ts",
+    "adapter": "ts-node src/structural/adapter/Client.ts",
+    "decorator": "ts-node src/structural/decorator/Game.ts",
+    "strategy": "ts-node src/behavioral/strategy/Client.ts",
+
+    "test:all":  "mocha -r ts-node/register src/**/*.spec.ts",
+
+    "test:chain-of-reponsibility": "mocha -r ts-node/register src/behavioral/chain-of-responsibility/*.spec.ts",
+    "test:command": "mocha -r ts-node/register src/behavioral/command/*.spec.ts",
+    "test:interpreter": "mocha -r ts-node/register src/behavioral/interpreter/*.spec.ts",
+    "test:iterator": "mocha -r ts-node/register src/behavioral/iterator/*.spec.ts",
+    "test:mediator": "mocha -r ts-node/register src/behavioral/mediator/*.spec.ts",
+    "test:memento": "mocha -r ts-node/register src/behavioral/memento/*.spec.ts",
+    "test:observer": "mocha -r ts-node/register src/behavioral/observer/*.spec.ts",
+    "test:state": "mocha -r ts-node/register src/behavioral/state/*.spec.ts",
+    "test:strategy": "mocha -r ts-node/register src/behavioral/strategy/*.spec.ts",
+    "test:template-method": "mocha -r ts-node/register src/behavioral/template-method/*.spec.ts",
+    "test:visitor": "mocha -r ts-node/register src/behavioral/visitor/*.spec.ts",
+
+    "test:abstract-factory": "mocha -r ts-node/register src/creational/abstract-factory/*.spec.ts",
+    "test:builder": "mocha -r ts-node/register src/creational/builder/*.spec.ts",
+    "test:factory": "mocha -r ts-node/register src/creational/factory-method/*.spec.ts",
+    "test:prototype": "mocha -r ts-node/register src/creational/prototype/*.spec.ts",
+    "test:singleton": "mocha -r ts-node/register src/creational/singleton/*.spec.ts",
+
+    "test:adapter": "mocha -r ts-node/register src/structural/adapter/*.spec.ts",
+    "test:bridge": "mocha -r ts-node/register src/structural/bridge/*.spec.ts",
+    "test:composite": "mocha -r ts-node/register src/structural/composite/*.spec.ts",
+    "test:decorator": "mocha -r ts-node/register src/structural/decorator/*.spec.ts",
+    "test:facade": "mocha -r ts-node/register src/structural/facade/*.spec.ts",
+    "test:flyweight": "mocha -r ts-node/register src/structural/flyweight/*.spec.ts",
+    "test:proxy": "mocha -r ts-node/register src/structural/proxy/*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  }
+}
