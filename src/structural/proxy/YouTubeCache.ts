@@ -3,19 +3,19 @@ import IYouTubeManager from './interfaces/IYouTubeManager';
 export default class YouTubeCache implements IYouTubeManager {
 
     private service: IYouTubeManager;
+    private cache: string[] = [];
 
     constructor(service: IYouTubeManager) {
         this.service = service;
     }
 
-    getListVideo(): void {
-        this.service.getListVideo();
-    }
     getVideo(id: string): void {
+        if (this.cache.find(video => video === id)) {
+            return console.log(`Get video ${id} from cache`);
+        }
+        
         this.service.getVideo(id);
-    }
-    downloadVideo(id: string): void {
-        this.service.downloadVideo(id);
+        this.cache.push(id);
     }
 }
 
