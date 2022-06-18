@@ -9,6 +9,7 @@
     "abstract-factory": "ts-node src/creational/abstract-factory/Client.ts",
     "adapter": "ts-node src/structural/adapter/Client.ts",
     "bridge": "ts-node src/structural/bridge/Client.ts",
+    "composite": "ts-node src/structural/composite/Client.ts",
     "decorator": "ts-node src/structural/decorator/Game.ts",
     "strategy": "ts-node src/behavioral/strategy/Client.ts",
     "proxy": "ts-node src/structural/proxy/Client.ts",
